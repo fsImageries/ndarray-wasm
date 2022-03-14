@@ -554,31 +554,3 @@ export class NdArray<T> {
     return outStr;
   }
 }
-
-// export function _dim<T>(x:T[]):T {
-//   const ret:i32[] = [];
-//   let tmp = x
-//   while (typeof x === "object" && isArray<T>()) {
-//     ret.push(x.length);
-//     tmp = tmp[0];
-//   }
-//   return ret;
-// }
-
-// export function getShape<T>(array:T):i32[] {
-//   // let y:T[][], z:T[];
-//   if (typeof array == "object" && isArray<T>()) {
-//     let y = array[0];
-//     if (typeof y == "object" && isArray(y)) {
-//       let z = y[0];
-//       if (typeof z == "object") {
-//         const tmp = [array.length, y.length]
-//         // return _dim<T>(array);
-//         return tmp.concat(getShape<T>(z))
-//       }
-//       return [array.length, y.length];
-//     }
-//     return [array.length];
-//   }
-//   return [];
-// }
